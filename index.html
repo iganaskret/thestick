@@ -1,122 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Stick Polska">
-    <link rel="stylesheet" href="CSS/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Stick Polska" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="form/form.js"></script>
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="CSS/css.css" />
     <title>The Stick Polska</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="bckg">
-        <div id="sticky">
-            <img src="img/logo.png" alt="logo" id="logo">
-            <div class="menu">
-                <div id="container">
-                    <div id="en"></div>
-                    <div id="to"></div>
-                    <div id="tre"> </div>
-                </div>
-                <nav>
-                    <a href="#" class="active"> STRONA GŁÓWNA </a>
-                    <a href="#"> SKLEP </a>
-                    <a href="#"> O NAS </a>
-                    <a href="#"> INSTRUKCJE I WIDEO </a>
-                    <a href="#"> KONTAKT </a>
-                    <button class="navbtn"> KUP TERAZ </button>
-                </nav>
-            </div>
+      <div id="sticky">
+        <img src="img/logo.png" alt="logo" id="logo" />
+        <div class="menu">
+          <div id="container">
+            <div id="en"></div>
+            <div id="to"></div>
+            <div id="tre"></div>
+          </div>
+          <nav>
+            <a href="#" class="active"> STRONA GŁÓWNA </a>
+            <a href="#"> SKLEP </a>
+            <a href="#"> O NAS </a>
+            <a href="#"> INSTRUKCJE I WIDEO </a>
+            <a href="#"> KONTAKT </a>
+            <button id="navbtn">KUP TERAZ</button>
+          </nav>
         </div>
-        <h1> ORYGINALNY THE STICK <br> NUMEREM 1 OD 1988 </h1>
-        <h2> Dla profesjonalnych sportowców, fizjoterapeutów i amatorów. </h2>
-        <button class="sklep"> SKLEP </button>
+      </div>
+      <h1>
+        ORYGINALNY THE STICK <br />
+        NUMEREM 1 OD 1988
+      </h1>
+      <h2>Dla profesjonalnych sportowców, fizjoterapeutów i amatorów.</h2>
+      <button class="sklep">SKLEP</button>
+      <img src="img/arrow-icon.png" alt="arrow pointing down" class="arrow" />
     </header>
-    <main>
+    <main id="main">
+      <h3>Czym jest kijek <span id="yellow">The Stick</span>?</h3>
+      <article class="about">
+        <p>
+          Kijek to proste urządzenie do masażu i automasażu o następującym
+          działaniu:
+        </p>
+        <ul id="abt-ul">
+          <li>
+            zmniejsza bóle i napięcia mięśniowe
+          </li>
+          <li>
+            wzmacnia mięśnie
+          </li>
+          <li>
+            zwiększa elastyczność i wydolność mięśni
+          </li>
+          <li>
+            skraca czas regeneracji
+          </li>
+          <li>
+            przygotowuje mięśnie do wzmożonej aktywności
+          </li>
+          <li>
+            zapewnia odprężenie dla mięśni po wysiłku
+          </li>
+        </ul>
+        <p>
+          Dzięki kijkowi można wymasować samodzielnie praktycznie całe ciało-
+          oczywiście w przypadku masażu pleców lepszy efekt osiągniemy dzięki
+          pomocy drugiej osoby.
+        </p>
+        <button class="learnmore">DOWIEDZ SIĘ WIĘCEJ</button>
+      </article>
 
-        <h3> Czym jest kijek <span id="yellow">The Stick</span>?</h3>
-        <article class="about">
-            <a href="#" id="abt-link">
-                <p>Kijek to proste urządzenie do masażu i automasażu o następującym działaniu: </p>
-                <ul id="abt-ul">
-                    <li>
-                        zmniejsza bóle i napięcia mięśniowe
-                    </li>
-                    <li>
-                        wzmacnia mięśnie
-                    </li>
-                    <li>
-                        zwiększa elastyczność i wydolność mięśni
-                    </li>
-                    <li>
-                        skraca czas regeneracji
-                    </li>
-                    <li>
-                        przygotowuje mięśnie do wzmożonej aktywności
-                    </li>
-                    <li>
-                        zapewnia odprężenie dla mięśni po wysiłku
-                    </li>
-                </ul>
-                <p> Dzięki kijkowi można wymasować samodzielnie praktycznie całe ciało- oczywiście w przypadku masażu pleców lepszy efekt osiągniemy dzięki pomocy drugiej osoby.</p>
-                <button class="learnmore"> DOWIEDZ SIĘ WIĘCEJ </button>
-            </a>
-        </article>
-
-        <div class="rodzaje">
-            <h3> RODZAJE KIJKÓW </h3>
-            <div class="gallery">
-
-                <div id="stick-one">
-                    <a href="#"> <h4>MARATHON STICK</h4></a>
-                </div>
-                <div id="stick-two">
-                    <a href="#"> <h4>SPRINTER STICK</h4> </a>
-                </div>
-                <div id="stick-three">
-                    <a href="#"><h4>TRAVEL STICK </h4></a>
-                </div>
-                <div id="stick-four">
-                    <a href="#"><h4> STIFF STICK </h4></a>
-                </div>
-                <div id="stick-five">
-                    <a href="#"><h4> FOOT WHEEL </h4> </a>
-                </div>
-            </div>
+      <div class="rodzaje">
+        <h3>RODZAJE KIJKÓW</h3>
+        <div class="gallery">
+          <div id="stick-one">
+            <a href="#"> <h4>MARATHON STICK</h4></a>
+          </div>
+          <div id="stick-two">
+            <a href="#"> <h4>SPRINTER STICK</h4> </a>
+          </div>
+          <div id="stick-three">
+            <a href="#"><h4>TRAVEL STICK</h4></a>
+          </div>
+          <div id="stick-four">
+            <a href="#"><h4>STIFF STICK</h4></a>
+          </div>
+          <div id="stick-five">
+            <a href="#"><h4>FOOT WHEEL</h4> </a>
+          </div>
         </div>
+      </div>
 
-        <div class="opinia">
-            <h3> OPINIE O KIJKU </h3>
-            <div class="opinia-grid">
-                <p class="first-quote">Stosowanie kijka Stick jest wartościowym uzupełnieniem, nowym sposobem zmniejszania ryzyka przeciążeń powstających podczas uprawiania biegania. Jego działanie ma wpływ na uruchomienie poszczególnych warstw tkanek miękkich. </p>
-                <p class="second-quote">Mobilizacja mięśni poprzez kijek Stick umożliwia biomechaniczne uelastycznienie ich struktury. Dlatego może on być istotnym elementem w autoterapii i w procesie odnowy biologicznej, pozwalającym na zmniejszenie powstającego po treningach, podwyższonego napięcia mięśniowo-powięziowego.</p>
-            </div>
-            <cite> dr hab. Sławomir Marszałek </cite>
+      <div class="opinia">
+        <h3>OPINIE O KIJKU</h3>
+        <div class="opinia-grid">
+          <p class="first-quote">
+            <!-- <span id="first-quote">"</span> -->
+            Stosowanie kijka Stick jest wartościowym uzupełnieniem, nowym
+            sposobem zmniejszania ryzyka przeciążeń powstających podczas
+            uprawiania biegania. Jego działanie ma wpływ na uruchomienie
+            poszczególnych warstw tkanek miękkich.
+          </p>
+          <p class="second-quote">
+            Mobilizacja mięśni poprzez kijek Stick umożliwia biomechaniczne
+            uelastycznienie ich struktury. Dlatego może on być istotnym
+            elementem w autoterapii i w procesie odnowy biologicznej,
+            pozwalającym na zmniejszenie powstającego po treningach,
+            podwyższonego napięcia mięśniowo-powięziowego.
+            <!-- <span id="second-quote">"</span> -->
+          </p>
         </div>
-        
-        <footer>
-            
-        </footer>
-        
+        <cite> dr hab. Sławomir Marszałek </cite>
+      </div>
+
+      <footer>
+        <section class="container">
+          <h3>Napisz do nas!</h3>
+          <div class="container form-top">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                <div class="panel panel-danger">
+                  <div class="panel-body">
+                    <form id="reused_form">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input
+                          type="text"
+                          name="name"
+                          required
+                          class="form-control"
+                          placeholder="Enter Name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          required
+                          class="form-control"
+                          placeholder="Enter Email"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label>Message</label>
+                        <textarea
+                          rows="3"
+                          name="message"
+                          class="form-control"
+                          placeholder="Type Your Message"
+                        ></textarea>
+                      </div>
+                      <div class="form-group">
+                        <button
+                          class="btn btn-raised btn-lg btn-warning"
+                          type="submit"
+                        >
+                          Send
+                        </button>
+                      </div>
+                    </form>
+                    <div
+                      id="error_message"
+                      style="width:100%; height:100%; display:none; "
+                    >
+                      <h4>
+                        Error
+                      </h4>
+                      Sorry there was an error sending your form.
+                    </div>
+                    <div
+                      id="success_message"
+                      style="width:100%; height:100%; display:none; "
+                    >
+                      <h2>Success! Your Message was Sent Successfully.</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h4>made by <a href=http://iganaskret.com/myPortfolio/ target="blank">Iga Naskręt</a> 2019</h4>
+      </footer>
     </main>
 
     <div class="modal-bg hide">
-        <article class="modal-content">
-            <ul class="modal">
-                <li><a href="#" class="active"> STRONA GŁÓWNA </a> </li>
-                <li><a href="#"> SKLEP </a> </li>
-                <li><a href="#"> O NAS </a> </li>
-                <li><a href="#"> INSTRUKCJE I WIDEO </a> </li>
-                <li><a href="#"> KONTAKT </a> </li>
-                <li><button class="navbtn"> KUP TERAZ </button></li>
-            </ul>
-        </article>
+      <article class="modal-content">
+        <ul class="modal">
+          <li><a href="#" class="active"> STRONA GŁÓWNA </a></li>
+          <li><a href="#"> SKLEP </a></li>
+          <li><a href="#"> O NAS </a></li>
+          <li><a href="#"> INSTRUKCJE I WIDEO </a></li>
+          <li><a href="#"> KONTAKT </a></li>
+          <li><button class="navbtn">KUP TERAZ</button></li>
+        </ul>
+      </article>
     </div>
 
-    <script src="JS/thestick.js">
-
-    </script>
-</body>
-
+    <script src="JS/thestick.js"></script>
+  </body>
 </html>
