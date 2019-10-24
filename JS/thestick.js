@@ -21,3 +21,9 @@ function showModal() {
   //modal.classList.toggle("slideback");
   // modal.addEventListener("animationend", modal.classList.add("hide"));
 }
+
+document.querySelector(".arrow").addEventListener("click", () => {
+  document.querySelector("main").scrollIntoView({
+    behavior: "smooth"
+  });
+});

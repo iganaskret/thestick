@@ -406,6 +406,7 @@ footer h4 {
     margin-right: auto;
     transform: translateY(80vh);
     animation: bounce 2s infinite;
+    cursor: pointer;
   }
 
   @keyframes bounce {
@@ -538,6 +539,11 @@ footer h4 {
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
+  }
+
+  #success_message,
+  #error_message {
+    color: black;
   }
 }
 
