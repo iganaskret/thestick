@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
+
+/* GENERALNIE */
+
+body {
+  margin: 0;
+  font-family: "Bitter", serif;
+}
+
+#bckg {
+  background-image: url(../img/bck2.png);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 800px;
+  position: relative;
+}
+
+#logo {
+  width: 140px;
+  height: 10%;
+  margin-right: 100px;
+  position: relative;
+  left: 2%;
+  top: 10px;
+}
+
+/* BURGER MENU */
+
+nav {
+  display: none;
+}
+
+#container {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  z-index: 1;
+}
+
+#en,
+#to,
+#tre {
+  margin: 6px 0;
+  width: 35px;
+  height: 5px;
+  background: #ffffff;
+  border-radius: 4px;
+  right: 30px;
+  top: 10px;
+  transition: 0.7s ease;
+}
+
+.change #en {
+  -webkit-transform: rotate(45deg) translate(6px, 9px);
+  transform: rotate(45deg) translate(6px, 9px);
+}
+
+.change #to {
+  opacity: 0;
+}
+
+.change #tre {
+  -webkit-transform: rotate(-45deg) translate(6px, -9px);
+  transform: rotate(-45deg) translate(6px, -9px);
+}
+
+/* MODAL */
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: slide 0.7s;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(200%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideback {
+  animation: slideback 0.7s;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes slideback {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
+}
+
+.modal-content {
+  display: block;
+  text-align: center;
+  color: white;
+  font-family: "Bitter", serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  position: relative;
+  top: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+}
+
+/* MAIN PAGE */
+
+a {
+  padding-top: 35px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #ecff00;
+}
+
+#navbtn {
+  width: 170px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Bitter", serif;
+}
+
+#navbtn:hover {
+  background-color: #ecff00;
+  color: black;
+  border: none;
+}
+
+h1 {
+  font-family: "Bitter", serif;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: "Bitter", serif;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 3px;
+}
+
+.sklep {
+  position: absolute;
+  font-family: "Bitter", serif;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 3px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+  height: 40px;
+  border-radius: 40px;
+  margin-top: 25px;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+/* MAIN SECTION */
+
+#main {
+  background-color: black;
+  color: white;
+}
+
+/* BIG SCREEN */
+
+@media screen and (min-width: 1175px) {
+  nav {
+    display: flex;
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    justify-content: space-between;
+    color: white;
+    font-family: "Bitter", serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    width: 80%;
+  }
+
+  #container {
+    display: none;
+  }
+
+  a {
+    padding-top: 35px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: #ecff00;
+  }
+
+  #navbtn {
+    width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Bitter", serif;
+  }
+
+  #navbtn:hover {
+    background-color: #ecff00;
+    color: black;
+    border: none;
+  }
+
+  h1 {
+    position: absolute;
+    font-family: "Bitter", serif;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 3em;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h2 {
+    position: absolute;
+    font-family: "Bitter", serif;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 3px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .sklep {
+    position: absolute;
+    font-family: "Bitter", serif;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 3px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 920px) {
+}
+
+.sklep:hover {
+  background-color: #ecff00;
+  color: black;
+  border: none;
+}
