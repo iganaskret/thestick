@@ -16,7 +16,7 @@ body {
 }
 
 #bckg {
-  background-image: url(../img/bck2.png);
+  background-image: url(../img/bck4.png);
   background-position: center;
   background-size: cover;
   padding-bottom: 670px;
@@ -39,6 +39,10 @@ a {
 button {
   color: white;
   font-family: "Bitter", serif;
+}
+
+.hidden {
+  display: none;
 }
 
 /* BURGER MENU */
@@ -215,6 +219,7 @@ main h3 {
   font-size: 2.5em;
   text-align: center;
   padding-top: 70px;
+  padding-bottom: 30px;
 }
 
 .about {
@@ -297,9 +302,19 @@ cite {
   text-align: center;
 }
 
+.kontakt {
+  color: black;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.kontakt h3 {
+  padding: 0;
+}
+
 footer h4 {
   color: black;
-  font-size: 1em;
+  font-size: 0.7em;
   text-align: center;
   padding: 0;
   padding-bottom: 20px;
@@ -315,7 +330,7 @@ footer h4 {
     position: absolute;
     left: 200px;
     top: 10px;
-    justify-content: space-between;
+    justify-content: flex-end;
     font-weight: 400;
     font-size: 0.9em;
     width: 80%;
@@ -423,6 +438,7 @@ footer h4 {
   }
 
   .gallery {
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
@@ -452,7 +468,7 @@ footer h4 {
     color: var(--yellow);
   }
 
-  .gallery div {
+  .gallery div.flip-card {
     border-right: 2px solid white;
   }
 
@@ -480,6 +496,50 @@ footer h4 {
     background-image: url("../img/sticks/foot-wheel-main-3.png");
     background-position: 55%;
     border-right: none;
+  }
+
+  .gallery div.flip-card {
+    /* background-color: transparent; */
+    /* width: 300px;
+    height: 300px;
+    perspective: 1000px; */
+    /* border-right: none; */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    /* background-color: #bbb; */
+    /* color: black; */
+  }
+
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back p {
+    padding: 5px;
   }
 
   /* FOOTER */

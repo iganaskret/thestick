@@ -26,10 +26,6 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-    /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="form/form.js"></script>
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -49,18 +45,18 @@
             <div id="tre"></div>
           </div>
           <nav>
-            <a href="#" class="active"> STRONA GŁÓWNA </a>
-            <a href="#"> SKLEP </a>
-            <a href="#"> O NAS </a>
-            <a href="#"> INSTRUKCJE I WIDEO </a>
-            <a href="#"> KONTAKT </a>
+            <!-- <a href="#" class="active"> STRONA GŁÓWNA </a> -->
+            <!-- <a href="#"> SKLEP </a>
+            <a href="#"> O NAS </a> -->
+            <!-- <a href="#"> INSTRUKCJE I WIDEO </a> -->
+            <!-- <a href="#"> KONTAKT </a> -->
             <button id="navbtn">KUP TERAZ</button>
           </nav>
         </div>
       </div>
       <h1>
         ORYGINALNY THE STICK <br />
-        NUMEREM 1 OD 1988
+        NUMEREM JEDEN OD 1988
       </h1>
       <h2>Dla profesjonalnych sportowców, fizjoterapeutów i amatorów.</h2>
       <button class="sklep">SKLEP</button>
@@ -98,26 +94,101 @@
           oczywiście w przypadku masażu pleców lepszy efekt osiągniemy dzięki
           pomocy drugiej osoby.
         </p>
-        <button class="learnmore">DOWIEDZ SIĘ WIĘCEJ</button>
+        <!-- <button class="learnmore">DOWIEDZ SIĘ WIĘCEJ</button> -->
       </article>
 
       <div class="rodzaje">
         <h3>RODZAJE KIJKÓW</h3>
         <div class="gallery">
-          <div id="stick-one">
-            <a href="#"> <h4>MARATHON STICK</h4></a>
+          <!-- <div class="stick-one-container">
+            <div id="stick-one">
+              <a href="#"> <h4>MARATHON STICK</h4></a>
+            </div>
+            <div class="stick-one-description hidden">
+              <h4>MARATHON STICK</h4>
+              <p>
+                Bardzo elastyczny i delikatny w porównaniu z innymi modelami, co
+                ułatwia masaż przy szczupłej budowie ciała. Polecany dla osób
+                bardzo szczupłych i delikatnych. Nazwa może być troche myląca
+                ponieważ dla maratończyka najlepsza wersja to sprinter, Model
+                ten jednak jest przydatny do masażu wstępnego.
+              </p>
+            </div>
+          </div> -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" id="stick-one">
+                <a href="#"> <h4>MARATHON STICK</h4></a>
+              </div>
+              <div class="flip-card-back">
+                <h4>MARATHON STICK</h4>
+                <p>
+                  Bardzo elastyczny i delikatny w porównaniu z innymi modelami,
+                  co ułatwia masaż przy szczupłej budowie ciała. Polecany dla
+                  osób bardzo szczupłych i delikatnych. Nazwa może być troche
+                  myląca ponieważ dla maratończyka najlepsza wersja to sprinter,
+                  Model ten jednak jest przydatny do masażu wstępnego.
+                </p>
+              </div>
+            </div>
           </div>
-          <div id="stick-two">
-            <a href="#"> <h4>SPRINTER STICK</h4> </a>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" id="stick-two">
+                <a href="#"> <h4>SPRINTER STICK</h4> </a>
+              </div>
+              <div class="flip-card-back">
+                <h4>SPRINTER STICK</h4>
+                <p>
+                  Model stworzony z myślą o zawodowych sportowcach jak i
+                  amatorach. Znacznie sztywniejszy od modelu marathon.
+                  Najczęściej kupowany model.
+                </p>
+              </div>
+            </div>
           </div>
-          <div id="stick-three">
-            <a href="#"><h4>TRAVEL STICK</h4></a>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" id="stick-three">
+                <a href="#"> <h4>TRAVEL STICK</h4> </a>
+              </div>
+              <div class="flip-card-back">
+                <h4>TRAVEL STICK</h4>
+                <p>
+                  Najkrótszy z modeli. Niewielka długość ułatwia stosowanie
+                  podczas podróży.
+                </p>
+              </div>
+            </div>
           </div>
-          <div id="stick-four">
-            <a href="#"><h4>STIFF STICK</h4></a>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" id="stick-four">
+                <a href="#"><h4>STIFF STICK</h4></a>
+              </div>
+              <div class="flip-card-back">
+                <h4>STIFF STICK</h4>
+                <p>
+                  Model bardzo sztywny, polecany osobom z masywną budową mięsni
+                  oraz lubiącym "głęboki" masaż. Jego długość ułatwia
+                  samodzielny masaż pleców.
+                </p>
+              </div>
+            </div>
           </div>
-          <div id="stick-five">
-            <a href="#"><h4>FOOT WHEEL</h4> </a>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" id="stick-five">
+                <a href="#"><h4>FOOT WHEEL</h4> </a>
+              </div>
+              <div class="flip-card-back">
+                <h4>FOOT WHEEL</h4>
+                <p>
+                  Urządzenie do masażu stóp - w kilka sekund przynosi ulgę
+                  obolałym stopom.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -212,7 +283,22 @@
             </div>
           </div>
         </section>
-        <h4>made by <a href=http://iganaskret.com/myPortfolio/ target="blank">Iga Naskręt</a> 2019</h4>
+        <section class="kontakt">
+          <h3>Kontakt</h3>
+          <div>
+            IMS <br />
+            Św. Marcina 13 <br />
+            63-820 Piaski <br />
+            NIP 6961302248
+          </div>
+        </section>
+        <h4>
+          made by
+          <a href="http://iganaskret.com/myPortfolio/" target="blank"
+            >Iga Naskręt</a
+          >
+          2019
+        </h4>
       </footer>
     </main>
 
